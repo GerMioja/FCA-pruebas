@@ -1,0 +1,383 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+nav{
+    background: #002f4d;
+    height: 80px;
+    width: 100%;
+}
+.enlace{
+    position: absolute;
+    padding: 20px 50px;
+}
+.logo{position: absolute;
+    top: 5px;
+    height: 80px;
+    width: 150px;
+}
+section{
+    background: url(IMAGENES/fondo.png) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: calc(100vh - 80px);
+}
+
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+nav ul li a{
+    color: #fff;
+    font-size: 20px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+}
+li a.active, li a:hover{
+    font-size: 25px;/*negrita*/
+    font-weight: bold;
+    border-radius: 5px #fff;
+    transition: .5s;
+    color: #FA8072;
+}
+.checkbtn{
+    font-size: 30px;/*negrita*/
+    color: #fff;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+
+
+
+/*texto1*/
+.text1{
+    position: absolute;
+    top:   20%;
+    width: 45%;
+    height: 75%;
+    left: 10%;
+    animation-name: titulo;
+    animation-duration: 3s;
+}
+@keyframes titulo{
+    0%{ top: 100%;}
+    100%{top: 20%;}
+}
+.title{
+    position: absolute;
+    text-align: right;
+    font-size: 6.5vw;
+    font-weight: 1vw;
+    font-family: 'Bebas Neue', cursive;
+    line-height: 100px;
+    color: #fff;
+    letter-spacing: +3px;
+}
+.ancash{
+    position: absolute;
+    letter-spacing: +9px;
+    text-align: left;
+    font-size:9.5vw;
+    font-weight: bold;
+}
+.subtite{
+    position: absolute;
+    color: #fff;
+    top:   70%;
+    font-size: 2.5vw;
+    letter-spacing: 0px;
+    font-family: 'Open Sans', sans-serif;
+}
+.subtitu2{
+    color: #FA8072;
+    font-size: 2.5vw;
+    font-family: 'Open Sans', sans-serif;
+}
+
+table {
+    position: absolute;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 35vw;
+    font-size: 2vw;
+    color: #ffffff;
+    top: 25%;
+    left: 35%;
+    table-layout: fixed;
+    width: 55%;
+    height: 55%;
+    border-collapse: collapse;
+
+  }
+
+.botons {
+    position: fixed;
+    top: 55%;
+    left: 70%;
+
+}
+.contenedor1{
+    position: absolute;
+    top: 25%;
+    left: 40%;
+    width: 45%;
+    height: 250px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    animation-name: contenedoranimation;
+    animation-duration: 5s;
+}
+@keyframes contenedoranimation{
+    0%{width: 25px;}
+
+}
+.text_boton1{
+    position: relative;
+    border-radius: 6px;
+    border: 2px solid #fff;
+    background-color: #002f4d;
+    overflow: hidden;
+    margin-bottom: 8px;
+    height: 35%;
+    width: 100%;
+    top: 5%;
+    padding: 15px;
+    position: absolute;
+    color: #fff;
+    font-size: 2.5vw;
+    font-family: 'Open Sans', sans-serif;
+}
+.text_boton2{
+    position: absolute;
+    border-radius: 6px;
+    border: 2px solid #fff;
+    background-color: #66CC66;
+    /*
+    background: linear-gradient(to right top, #fa8072d0, #af05da99, #154360);*/
+    overflow: hidden;
+    margin-bottom: 8px;
+    height: 35%;
+    width: 100%;
+    top: 55%;
+    padding: 15px;
+    position: absolute;
+    color: #fff;
+    font-size: 2.5vw;
+    font-family: 'Open Sans', sans-serif;
+}
+.boton_personalizado{
+    position: absolute;
+    top: 5%;
+    left: 90%;
+    width: 25%;
+    align-self: left;
+    text-decoration: none;
+    padding: 10px;
+    font-family: 'Bebas Neue', cursive;
+    font-weight: 25vw;
+    font-size: 2.5vw;
+    color: #ffffff;
+    background-color: #88011d;
+    border-radius: 6px;
+    border: 2px solid #fff;
+    z-index: 0;
+  }
+  .boton_personalizado:hover{
+    color: #002f4d;
+    background-color: #ffffff;
+    font-weight: bold;
+}
+
+.btn-insta{
+    position: fixed;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    bottom: 30px;
+    right: 30px;
+    color: #000;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 0px 2px 20px ;
+    z-index: 100;
+}
+.btn-facebook{
+    position: fixed;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    bottom: 30px;
+    right: 95px;
+    color: #000;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 0px 2px 20px;
+    z-index: 100;
+}
+.btn-insta:hover{
+    text-decoration: none;
+    color: #88011d;
+    background: rgb(230, 11, 164);
+}
+.btn-facebook:hover{
+    text-decoration: none;
+    color: #002f4d;
+    background: rgb(0, 153, 255);
+}
+
+@media (max-width: 952px){
+    .enlace{
+        padding-left: 20px;
+    }
+    nav ul li a{
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 858px){
+    .checkbtn{
+        display: block;
+    }
+    .logo{
+        position: absolute;
+        width: 120px;
+        height:70px ;
+        left: 35%;
+    }
+    ul{
+        position: fixed;
+        width: 50%;
+        height: 100vh;
+        background: #154360;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+        z-index: 2;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    li a:hover, li a.active{
+        background: #1A5276;
+        font-weight: bold;
+        background: none;
+        color: #FA8072;
+    }
+    #check:checked ~ ul{
+        left:0;
+    }
+    .text1{
+        position: absolute;
+        top:   20%;
+        width: 45%;
+        height: 75%;
+        left: 30%;
+    
+    }
+    .title{
+        position: absolute;
+        text-align: right;
+        font-size: 10vw;
+        font-weight: 10vw;
+        font-family: 'Bebas Neue', cursive;
+        line-height: 50px;
+        color: #fff;
+        letter-spacing: +2px;
+    }
+    .ancash{
+        position: absolute;
+        letter-spacing: +5px;
+        text-align: left;
+        font-size:15vw;
+        font-weight: bold;
+    }
+    .subtite{
+        position: absolute;
+        text-align: center;
+        top: 35%;
+        color: #fff;
+        font-size: 3.5vw;
+        font-family: 'Plus Jakarta Sans', sans-serif;
+    }
+    .subtitu2{
+        position: relative;
+        font-weight: bold;
+        background-color: #002f4daf;
+        font-size: 4.5vw;
+        color: #FA8072;
+        border-radius: 15px;
+        font-size: 4.5vw;
+        font-family: 'Plus Jakarta Sans', sans-serif;
+    }
+    .contenedor1{
+        position: absolute;
+        top: 65%;
+        left: 15%;
+        width: 75%;
+        height: 25%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .text_boton1{
+        color: #fff;
+        font-size: 3.5vw ;
+        font-weight: bold;
+ 
+    }
+    .text_boton2{
+        color: #002f4d;
+        font-size: 3.5vw ;
+        font-weight: bold;
+ 
+    }
+    .boton_personalizado{
+        text-decoration: none;
+        padding: 10px;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 10vw;
+        left: 80%;
+        font-size: 3vw;
+        color: #fff;
+        background-color: #88011d;
+        border-radius: 6px;
+        border: 2px solid #fff;
+      }
+    .btn-insta{
+        width: 8%;
+        height: 8%;
+    }
+    .btn-facebook{
+        width: 8%;
+        height: 8%;
+        right: 75px;
+    }
+    }
